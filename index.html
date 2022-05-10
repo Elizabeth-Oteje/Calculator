@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator-grid" >
+        <div class="card" style="width: 15rem;" >
+            <div class="card-body">
+                <form id="addForm">
+                    <div class="output">
+                        <div data-previous-operand class="previous-operand"></div>
+                        <div data-current-operand class="current-operand"></div>
+                    </div>
+                    
+                    <div class="row mt-2 ">
+                        <button data-all-clear type="button" class="col btn btn-light delete" onclick="window.location.reload();">AC</button>
+                        <button data-delete type="button" class="col btn btn-light delete">DEL</button>
+                        <button data-operation type="button" class="col btn btn-light">/ </button>
+                        <button data-equal type="button" class="col btn btn-light">=</button>
+                        
+                    </div>
+                    <div class="row mt-1">
+                        <button data-number type="button" class="col btn btn-light">1</button>
+                        <button data-number type="button" class="col btn btn-light">2</button>
+                        <button data-number type="button" class="col btn btn-light">3</button>
+                        <button data-operation type="button" class="col btn btn-light">-&nbsp;</button>
+                    </div>
+                    <div class="row mt-1">
+                        <button data-number type="button" class="col btn btn-light">4</button>
+                        <button data-number type="button" class="col btn btn-light">5</button>
+                        <button data-number type="button" class="col btn btn-light">6</button>
+                        <button data-operation type="button" class="col btn btn-light">+</button>
+                    </div>
+                    <div class="row mt-1">
+                        <button data-number type="button" class="col btn btn-light">7</button>
+                        <button data-number type="button" class="col btn btn-light">8</button>
+                        <button data-number type="button" class="col btn btn-light">9</button>
+                        <button data-operation type="button" class="col btn btn-light">*</button>
+                    </div>
+                    <div class="row mt-1">
+                        <button data-number type="button" class="col btn btn-light">.</button>
+                        <button data-number type="button" class="col btn btn-light">0</button>
+                        <button data-operation type="button" class="col btn btn-light">%</button>
+                        
+                        <!-- <input type="submit" id="enter" class="col btn btn-light"value="Submit"> -->
+
+                        <button  type="button" class="col btn btn-light" id="button">Submit</button>
+                       
+                    </div>
+    
+                    
+                   
+                    
+                    
+                       
+                </form>
+               
+                   
+
+                   
+                
+            </div>
+         
+         
+         
+        </div>
+        <div class="card" style="margin-left: 20px;">
+            <div class="card-body">
+                <h6>Amount you have in naira:</h6>
+                    <p class="displayed" id="item"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
